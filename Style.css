@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  --clr-primary-400 : hsl(218, 44%, 22%);
+  --clr-primary-100 : hsl(220, 15%, 55%);
+
+  --clr-neutral-400 : hsl(212, 45%, 89%);
+  --clr-neutral-100 : hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  
+  Font-size: 15px ;
+  font-family:'Outfit', sans-serif; 
+  margin: 0;
+  padding: 0;
+  background: var(--clr-neutral-400);
+}
+
+
+.product {
+  
+  max-width: 22.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.75em;
+  background-color: var(--clr-neutral-100);
+}
+
+.product-img {
+  padding: 1rem;
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 1.75em;
+  margin-bottom: -1em;
+}
+
+
+
+.product-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 1em;
+  
+}
+
+.product-title {
+  font-size: 1.5em;
+  text-align: center;
+  flex-wrap: wrap;
+  color: var(--clr-primary-400);
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  
+}
+
+.product-text{
+  line-height: 1.3em;
+  font-size: 1.125em;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: -0.1em;
+  padding-bottom: 1.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: var(--clr-primary-400);
+}
+
+
+
+
